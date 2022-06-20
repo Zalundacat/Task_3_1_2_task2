@@ -25,7 +25,7 @@ public class Main {
 
         List<String> recruits = persons.stream()
                 .filter(sex -> sex.getSex() == Sex.MAN)
-                .filter(age -> age.getAge() >= 17 && age.getAge() <= 27)
+                .filter(age -> age.getAge() >= 18 && age.getAge() <= 27)
                 .map(Person::getFamily)
                 .collect(Collectors.toList());
         System.out.println(recruits);
